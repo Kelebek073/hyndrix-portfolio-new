@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyndrix Lim — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Style.js">
+
+<style>
+ 
+</style>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follow" id="cursorFollow"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">H<span>.</span>Lim</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/uc?export=download&id=1fM_ijbf9D7eAzxQOiceTrafDajvDp3tC" target="_blank" class="nav-cta">Download CV</a>
+    </div>
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+
+  <!-- Loader overlay (shown first) -->
+  <div id="page-loader">
+    <div class="ripple-wrap">
+      <div class="ripple-ring"></div>
+      <div class="ripple-ring"></div>
+      <div class="ripple-ring"></div>
+      <div class="ripple-core"></div>
+    </div>
+    <span class="loader-label">Loading...</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Available for freelance work</div>
+      <h1 class="hero-name">
+        Hyndrix<br>
+        <span class="line2">Lim</span>
+      </h1>
+      <p class="hero-title">Web Developer &amp; UI Engineer</p>
+      <p class="hero-desc">I build fast, modern, and high-performing websites — crafting clean user experiences, responsive interfaces, and scalable web solutions. Based in the Philippines, working with clients worldwide.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-secondary">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="images/DSC06151.JPG">
+        <div class="photo-card photo-card-1">
+          <div class="card-label">Experience</div>
+          <div class="card-value">3+ Years</div>
+          <div class="card-sub">Full-Stack Dev</div>
+        </div>
+        <div class="photo-card photo-card-2">
+          <div class="card-label">Projects Done</div>
+          <div class="card-value">10+</div>
+          <div class="card-sub">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat-item reveal">
+      <div class="stat-num">10<span>+</span></div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">10<span>+</span></div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">3<span>+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">100<span>%</span></div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title" style="margin-bottom:24px;">Turning Ideas Into<br>Digital Reality</h2>
+        <p>Hi, I'm <strong>Hyndrix Lim</strong> — a passionate web developer based in the Philippines with a knack for building clean, responsive, and performant web applications.</p>
+        <p>I specialize in the full development cycle, from crafting engaging user interfaces with modern frameworks to building scalable back-end systems. I believe great code is only as good as the experience it creates.</p>
+        <p>When I'm not coding, I'm constantly learning new technologies and keeping up with the evolving world of web development to bring the best solutions to my clients.</p>
+        <div class="about-skills">
+          <div class="section-label" style="margin-bottom:12px;">Tech Stack</div>
+          <div class="skills-list">
+            <span class="skill-tag">Webflow</span>
+            <span class="skill-tag">Wix Studio</span>
+            <span class="skill-tag">Shopify</span>
+            <span class="skill-tag">Bubble.io</span>
+            <span class="skill-tag">GoDaddy</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Monday.com</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">CapCut</span>
+            <span class="skill-tag">Social Media Management</span>
+            <span class="skill-tag">Content Creation</span>
+            <span class="skill-tag">SEO</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-card reveal">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Fast & Performant</div>
+          <div class="card-body">Every site I build is optimized for speed, achieving high Lighthouse scores and delivering snappy user experiences across all devices.</div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">🎨</div>
+          <div class="card-title">Design-Driven</div>
+          <div class="card-body">I bridge the gap between design and development, translating Figma mockups into pixel-perfect, interactive interfaces with precision.</div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">🔐</div>
+          <div class="card-title">Reliable & Secure</div>
+          <div class="card-body">Clean, maintainable code with best practices in security, accessibility, and scalability — built to last and grow with your business.</div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">🤝</div>
+          <div class="card-title">Client-Focused</div>
+          <div class="card-body">Clear communication, on-time delivery, and a collaborative process — I treat every project as a partnership, not just a transaction.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Selected Work</h2> 
+
+    <!-- Project 1 -->
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images\live tracker img.png" alt="Sun Wu Live Project Tracker">
+
+        <div class="project-body">
+          <span class="project-tag">Full-Stack Web Application</span>
+
+          <div class="project-name">
+            Project Management Sytem
+          </div>
+
+          <div class="project-tech">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">SQLAlchemy</span>
+            <span class="tech-pill">Bootstrap</span>
+          </div>
+
+          <p class="project-desc">
+            A custom workflow management system built for tracking business registrations
+            and permit processing. The platform allows staff to manage projects, create
+            dynamic workflows, upload documents, monitor progress, and provide clients
+            with real-time tracking updates.
+          </p>
+
+          <div class="project-links">
+            <a href="https://sunwu-live-project-tracker.onrender.com/track"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub →
+            </a>
+
+            <a href="#contact" class="project-link" style="color:var(--muted);">
+              Request Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images/Untitled design (3).png" alt="Project thumbnail">
+        <div class="project-body">
+          <span class="project-tag">Business Website</span>
+          <div class="project-name">Business Coaching Website</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Html</span>
+            <span class="tech-pill">lovable</span>
+          </div>
+          <p class="project-desc">A French-based modern coaching and digital sales platform focused on lead generation, course sales, and conversion optimization.</p>
+          <div class="project-links">
+            <a href="https://www.closerevolution.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+              Live →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images/Untitled design (2).png" alt="Project thumbnail">
+        <div class="project-body">
+          <span class="project-tag">Business Website</span>
+          <div class="project-name">Business Coaching Website</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Html</span>
+            <span class="tech-pill">lovable</span>
+          </div>
+          <p class="project-desc">A modern coaching and sales training website for a French-based focused on lead generation, online course promotion, and high-conversion landing pages also connected to closerevolution.</p>
+          <div class="project-links">
+            <a href="https://www.ce-business.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+              Live →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images/Untitled design (4).png" alt="Project thumbnail">
+        <div class="project-body">
+          <span class="project-tag">Business / Corporate Website</span>
+          <div class="project-name">Web Design & Development Agency</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Html</span>
+            <span class="tech-pill">Figma</span>
+          </div>
+          <p class="project-desc">A corporate service website built for a digital agency offering custom web development, creative design, and digital marketing services for growing businesses.</p>
+          <div class="project-links">
+            <a href="https://devnity-web-development.webflow.io/" class="project-link" target="_blank" rel="noopener noreferrer">
+              Live →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images/4.png">
+        <div class="project-body">
+          <span class="project-tag">Business Website</span>
+          <div class="project-name">Corporate Business Website</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Html</span>
+            <span class="tech-pill">Figma</span>
+            <span class="tech-pill">Canva</span>
+          </div>
+          <p class="project-desc">A modern corporate website for a Philippine-based business solutions company offering registration, compliance, HR, legal, accounting, and marketing services.</p>
+          <div class="project-links">
+            <a href="https://sunwucorporation-com.webflow.io/" class="project-link" target="_blank" rel="noopener noreferrer">
+              Live →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+       <div class="project-card reveal">
+        <img class="project-thumb thumb-1" src="images/Landing Page.png" alt="Project thumbnail">
+        <div class="project-body">
+          <span class="project-tag">Web Development</span>
+          <div class="project-name">Landing Page</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Figma</span>
+          </div>
+          <p class="project-desc">Designed and developed a high-converting Webflow landing page for a Training and Business courses.</p>
+          <div class="project-links">
+            <a href="#contact" class="project-link" style="color:var(--muted);">Book Demo →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+      </div>
+
+     <!-- Hidden Project -->
+<div class="project-card reveal hidden-project">
+  <video class="project-thumb" autoplay muted loop playsinline>
+    <source src="video/PROJECT 004.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="project-body">
+    <span class="project-tag">Video Editing</span>
+
+    <div class="project-name">E-commerce</div>
+
+    <div class="project-tech">
+      <span class="tech-pill">CapCut</span>
+      <span class="tech-pill">Photoshop</span>
+    </div>
+
+    <p class="project-desc">
+      Edited an aerial video to clearly highlight the building's location and surrounding area.
+      Enhanced the footage with visual markers, smooth transitions, and clear pacing to help viewers
+      easily identify the property's position and nearby landmarks.
+    </p>
+
+    <div class="project-links">
+      <a href="#" class="project-link open-video" data-video="video/PROJECT 004.mp4">
+        Live →
+      </a>
+
+      <a href="#contact" class="project-link" style="color:var(--muted);">
+        Contact →
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Live Project Tracker -->
+<div class="project-card reveal hidden-project">
+  <img class="project-thumb thumb-1" src="images/6.png" alt="Project thumbnail">
+        <div class="project-body">
+          <span class="project-tag">Web Development</span>
+          <div class="project-name">Landing Page</div>
+          <div class="project-tech">
+            <span class="tech-pill">Webflow</span>
+            <span class="tech-pill">Figma</span>
+          </div>
+          <p class="project-desc">A corporate landing page created for a full-service business consultancy firm, featuring modern branding, service-driven layouts, and optimized inquiry sections for client acquisition.</p>
+          <div class="project-links">
+            <a href="#contact" class="project-link" style="color:var(--muted);">Book Demo →</a>
+            <a href="#contact" class="project-link" style="color:var(--muted);">Contact →</a>
+          </div>
+        </div>
+
+</div>
+
+</div> <!-- END projects-grid -->
+
+
+<button id="seeMoreBtn" class="see-more-btn">
+  See More Projects
+</button>
+    
+  </section>
+
+
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-title">Services Offered</h2>
+    <div class="services-grid">
+      <div class="service-item reveal">
+        <div class="service-num">01</div>
+        <span class="service-icon">🖥️</span>
+        <div class="service-title">Frontend Development</div>
+        <div class="service-desc">Pixel-perfect UIs built with React, Next.js, or Vue.js. Smooth animations, responsive design, and accessibility baked in from the start.</div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">02</div>
+        <span class="service-icon">⚙️</span>
+        <div class="service-title">Backend Development</div>
+        <div class="service-desc">Scalable REST APIs and server-side logic with Node.js, Express, or Laravel. Secure, well-documented, and built for performance.</div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">03</div>
+        <span class="service-icon">🔄</span>
+        <div class="service-title">Full-Stack Solutions</div>
+        <div class="service-desc">End-to-end web applications — from database architecture to polished UI. One developer who owns the entire stack and delivers cohesively.</div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">04</div>
+        <span class="service-icon">🛒</span>
+        <div class="service-title">E-Commerce Development</div>
+        <div class="service-desc">Custom online stores with payment integration, inventory management, and conversion-optimized product pages that drive real results.</div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">05</div>
+        <span class="service-icon">🚀</span>
+        <div class="service-title">Performance Optimization</div>
+        <div class="service-desc">Audit and optimize existing websites for speed, Core Web Vitals, and SEO — turning slow sites into fast, search-engine-friendly experiences.</div>
+        <div class="service-arrow">→</div>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">06</div>
+        <span class="service-icon">🔧</span>
+        <div class="service-title">Website Maintenance</div>
+        <div class="service-desc">Ongoing support, bug fixes, updates, and feature additions. A reliable technical partner you can count on long after launch day.</div>
+        <div class="service-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="resume-section">
+    <div class="resume-block reveal">
+      <span class="resume-icon">📄</span>
+      <div class="resume-title">Download My Resume</div>
+      <p class="resume-desc">Want to know more about my background, education, and work experience? Grab a copy of my full resume and let's discuss how I can help your project.</p>
+      <a href="https://drive.google.com/uc?export=download&id=1fM_ijbf9D7eAzxQOiceTrafDajvDp3tC" target="_blank" class="btn-resume">
+        <span>⬇</span> Download CV / Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Let's Work Together</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Have a project in mind?<br>Let's build it.</h3>
+        <p>Whether you need a brand new website, want to revamp an existing one, or need a reliable developer for a long-term project — I'm here and ready to help. Let's create something great together.</p>
+        <div class="contact-links">
+          <a href="mailto:hyndrix08@gmail.com" class="contact-link">
+            <span class="contact-link-icon">✉️</span>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">hyndrix08@gmail.com</div>
+            </div>
+            <span>→</span>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-link">
+            <span class="contact-link-icon">💻</span>
+            <div class="contact-link-text">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">github.com/Kelebek073</div>
+            </div>
+            <span>→</span>
+          </a>
+          <a href="https://upwork.com/" target="_blank" class="contact-link">
+            <span class="contact-link-icon">🔗</span>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Upwork</div>
+              <div class="contact-link-value">https://www.upwork.com/freelancers/~01063f879f324c033b</div>
+            </div>
+            <span>→</span>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1fM_ijbf9D7eAzxQOiceTrafDajvDp3tC" target="_blank" class="contact-link" style="border-color:var(--accent);background:var(--accent-glow);">
+            <span class="contact-link-icon">📄</span>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Resume</div>
+              <div class="contact-link-value" style="color:var(--accent);">Download My CV</div>
+            </div>
+            <span style="color:var(--accent);">⬇</span>
+          </a>
+        </div>
+      </div>
+    <div class="contact-form reveal">
+  <form action="https://formspree.io/f/mykvoajv" method="POST">
+
+    <div class="form-group">
+      <label class="form-label">Your Name</label>
+      <input type="text" name="name" class="form-input" placeholder="John Smith" required />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input type="email" name="email" class="form-input" placeholder="john@company.com" required />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Project Type</label>
+      <input type="text" name="project-type" class="form-input" placeholder="e.g. E-commerce website, Landing page..." />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-textarea" placeholder="Tell me about your project, timeline, and budget..." required></textarea>
+    </div>
+
+    <input type="hidden" name="_next" value="https://hyndrix-portflolio.netlify.app/" />
+    <input type="hidden" name="_subject" value="New message from your portfolio!" />
+
+    <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+      Send Message →
+    </button>
+
+  </form>
+</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">
+      © 2025 <span>Hyndrix Lim</span>. Crafted with in the Philippines.
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/" target="_blank" class="social-btn" title="GitHub">GH</a>
+      <a href="https://upwork.com/" target="_blank" class="social-btn" title="LinkedIn">Up</a>
+      <a href="https://drive.google.com/uc?export=download&id=1fM_ijbf9D7eAzxQOiceTrafDajvDp3tC" target="_blank" class="social-btn" title="Download Resume">CV</a>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'light' : 'dark');
+      toggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+    });
+
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const cursorFollow = document.getElementById('cursorFollow');
+    let mx = 0, my = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx - 5 + 'px';
+      cursor.style.top = my - 5 + 'px';
+    });
+    function animateCursor() {
+      const fx = parseFloat(cursorFollow.style.left || 0) || 0;
+      const fy = parseFloat(cursorFollow.style.top || 0) || 0;
+      cursorFollow.style.left = fx + (mx - 18 - fx) * 0.12 + 'px';
+      cursorFollow.style.top = fy + (my - 18 - fy) * 0.12 + 'px';
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(2)';
+        cursorFollow.style.transform = 'scale(1.5)';
+        cursorFollow.style.opacity = '0.8';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+        cursorFollow.style.transform = 'scale(1)';
+        cursorFollow.style.opacity = '0.5';
+      });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Counter animation
+    function animateCounters() {
+      document.querySelectorAll('.stat-num').forEach(el => {
+        const text = el.textContent;
+        const num = parseInt(text);
+        if (isNaN(num)) return;
+        const suffix = text.replace(num.toString(), '');
+        let start = 0;
+        const step = () => {
+          start += Math.ceil(num / 40);
+          if (start > num) start = num;
+          el.innerHTML = start + '<span>' + suffix + '</span>';
+          if (start < num) requestAnimationFrame(step);
+        };
+        step();
+      });
+    }
+    const statsObserver = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); }
+    }, { threshold: 0.5 });
+    statsObserver.observe(document.querySelector('.stats-row'));
+  </script>
+
+  <script>
+    // Hides the loader once the full page (images, fonts, etc.) is ready
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('page-loader');
+
+      // Small delay so it doesn't flash too fast on fast connections
+      setTimeout(() => {
+        loader.classList.add('hide');
+
+        // Remove from DOM after fade-out finishes
+        loader.addEventListener('transitionend', () => {
+          loader.remove();
+        }, { once: true });
+      }, 3000);
+    });
+  </script>
+  <script>
+     const btn = document.getElementById("seeMoreBtn");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+let expanded = false;
+
+btn.addEventListener("click", () => {
+    expanded = !expanded;
+
+    hiddenProjects.forEach(project => {
+        project.classList.toggle("show", expanded);
+    });
+
+    btn.textContent = expanded ? "Show Less" : "See More Projects";
+});
+  </script>
+
+  
+  
+
+</body>
+</html>
